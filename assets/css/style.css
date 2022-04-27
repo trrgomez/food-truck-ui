@@ -271,7 +271,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #be123c;
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -283,12 +283,12 @@ h3 {
   z-index: 100;
 }
 
-#contact .contactInfo {
+.contactInfo {
   position: absolute;
   top: 40px;
   width: 350px;
   height: calc(100% - 80px);
-  background-color: #f59e0b;
+  background-color: var(--primary-color);
   z-index: 1;
   padding: 40px;
   display: flex;
@@ -298,13 +298,13 @@ h3 {
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
 
-#contact .contactInfo h2 {
+.contactInfo h2 {
   font-size: 35px;
   letter-spacing: 0.1rem;
   margin-bottom: 20px;
 }
 
-#contact .contactInfo .info {
+.contactInfo .info {
   position: relative;
   margin-top: 50px;
   display: flex;
@@ -312,7 +312,7 @@ h3 {
   gap: 3rem;
 }
 
-#contact .contactInfo li {
+.contactInfo li {
   position: relative;
   display: flex;
   gap: 1rem;
@@ -320,28 +320,28 @@ h3 {
   align-items: flex-start;
 }
 
-#contact .contactInfo li i {
+.contactInfo li i {
   font-size: 20px;
 }
 
-#contact .contactForm {
+.contactForm {
   position: absolute;
   padding: 50px;
   padding-left: 250px;
   margin-left: 150px;
   width: calc(100% - 150px);
   height: 100%;
-  background-color: #fff;
+  background-color: var(--text-color);
   box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
 }
 
-#contact .contactForm h2 {
+.contactForm h2 {
   font-size: 35px;
   letter-spacing: 0.1rem;
   margin-bottom: 20px;
 }
 
-#contact .contactForm form {
+.contactForm form {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -349,38 +349,38 @@ h3 {
   gap: 1rem;
 }
 
-#contact .contactForm .inputGroup {
+.contactForm .inputGroup {
   position: relative;
 }
 
-#contact .contactForm .inputGroup.w50 {
+.contactForm .inputGroup.w50 {
   width: 47%;
 }
-#contact .contactForm .inputGroup.w100 {
+.contactForm .inputGroup.w100 {
   width: 100%;
 }
-#contact .contactForm .inputGroup input,
-#contact .contactForm .inputGroup textarea {
+.contactForm .inputGroup input,
+.contactForm .inputGroup textarea {
   width: 100%;
   resize: none;
   padding: 5px 0;
   font-size: 18px;
   font-weight: 300;
-  color: #333;
+  color: var(--text-color2);
   border: none;
   outline-width: 0;
   border-bottom: 1px solid #777;
 }
 
-#contact .contactForm .inputGroup textarea {
+.contactForm .inputGroup textarea {
   height: 120px;
 }
 
-#contact .contactForm form button {
+.contactForm form button {
   border-radius: 0;
   margin-top: 10px;
   width: 100%;
-  background-color: #eee;
+  background-color: var(--background-color);
   pointer-events: none;
   font-size: 18px;
   font-weight: 300;
@@ -392,7 +392,7 @@ h3 {
 /* media queries start*/
 
 /* navbar and header media queries */
-@media (max-width: 35em) {
+@media (max-width: 560px) {
   .primary-nav {
     --gap: 3rem;
     z-index: 1000;
@@ -423,13 +423,13 @@ h3 {
   }
 }
 
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 560px) and (max-width: 880px) {
   .primary-nav a > [aria-hidden="true"] {
     display: none;
   }
 }
 
-@media (min-width: 35em) {
+@media (min-width: 560px) {
   .primary-nav {
     --gap: clamp(1.5rem, 15vw, 3rem);
     padding-block: 2rem;
@@ -457,3 +457,58 @@ h3 {
     margin-bottom: 30px;
   }
 }
+
+/* contact form media queries */
+@media (max-width: 1200px) {
+  #contact .container {
+    width: 85%;
+    min-width: auto;
+    margin: 20px;
+  }
+
+  .contactInfo {
+    top: 0;
+    height: 550px;
+    position: relative;
+    box-shadow: none;
+    width: 100%;
+    margin: auto;
+  }
+
+  .contactForm {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    height: 550px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 960px) {
+  #contact::before {
+    display: none;
+  }
+
+  #contact .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 460px) {
+  .contactForm .inputGroup.w50 {
+    width: 100%;
+  }
+
+  .contactForm {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    height: 700px;
+    box-shadow: none;
+  }
+}
+
+/* media queries end*/
