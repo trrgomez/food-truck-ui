@@ -164,6 +164,62 @@ section {
 
 /* hero styling end */
 
+/* about styling start */
+#about .row {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .col {
+  flex: 1;
+  padding: 40px;
+}
+
+#about .about-content h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#about .about-content h3 {
+  color: #be123c;
+  margin: 20px 0;
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+#about .about-content p {
+  line-height: 1.7;
+}
+
+#about .about-content .btn {
+  margin-top: 20px;
+}
+
+#about .image-container img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 30px;
+}
+
+.social {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social i {
+  padding: 0.6rem;
+  background-color: #be123c;
+  font-size: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* about styling end */
+
 /* media queries start*/
 
 /* navbar and header media queries */
@@ -209,5 +265,16 @@ section {
     --gap: clamp(1.5rem, 15vw, 3rem);
     padding-block: 2rem;
     padding-inline: clamp(3rem, 10vw, 10rem);
+  }
+}
+
+@media (min-width: 760px) {
+  /* about section media queries */
+  #about {
+    padding: 100px 0;
+  }
+
+  #about .row {
+    flex-direction: row;
   }
 }
