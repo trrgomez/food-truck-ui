@@ -81,6 +81,12 @@ h3 {
   right: 0;
 }
 
+.primary-nav .social-group {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
 @supports (backdrop-filter: blur(1rem)) {
   .primary-nav {
     background: hsl(0 0%);
@@ -272,7 +278,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #contact .container {
@@ -389,6 +395,18 @@ h3 {
 
 /* contact section end */
 
+
+/* footer section start */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+  background-color: var(--background-color);
+}
+/* footer section end */
+
 /* media queries start*/
 
 /* navbar and header media queries */
@@ -431,10 +449,18 @@ h3 {
 
 @media (min-width: 560px) {
   .primary-nav {
-    --gap: clamp(1.5rem, 15vw, 3rem);
+    --gap: clamp(1.5rem, 5vw, 3rem);
     padding-block: 2rem;
-    padding-inline: clamp(3rem, 10vw, 10rem);
+    padding-inline: clamp(3rem, 5vw, 10rem);
   }
+
+  .primary-nav .social-group a{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
 }
 
 @media (min-width: 760px) {
