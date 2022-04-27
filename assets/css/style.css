@@ -13,6 +13,7 @@
   --hover-color: #f7b441;
   --secondary-color: #be123c;
   --background-color: #eee;
+  --background-color2: #111;
   --text-color: #fff;
   --text-color2: #333;
 }
@@ -277,7 +278,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color2);
   padding: 100px 0;
 }
 
@@ -382,7 +383,7 @@ h3 {
   height: 120px;
 }
 
-.contactForm form button {
+.contactForm button {
   border-radius: 0;
   margin-top: 10px;
   width: 100%;
@@ -391,6 +392,7 @@ h3 {
   font-size: 18px;
   font-weight: 300;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 /* contact section end */
@@ -402,8 +404,8 @@ footer {
   justify-content: center;
   align-items: center;
   height: 80px;
-
-  background-color: var(--background-color);
+  color: var(--text-color);
+  background-color: var(--background-color2);
 }
 /* footer section end */
 
