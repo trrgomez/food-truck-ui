@@ -217,28 +217,55 @@
         <div class="contactForm">
           <h2>Send us a Message</h2>
           <form>
-            <div class="inputGroup w50">
-              <input type="text" required />
-              <span>First Name</span>
+            <div class="form-control w50">
+              <label>First Name</label>
+              <input id="firstName" type="text" />
+              <div>              
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error message</small>
+              </div>
             </div>
-            <div class="inputGroup w50">
-              <input type="text" required />
-              <span>Last Name</span>
+            <div class="form-control w50">
+              <label>Last Name</label>
+              <input id="lastName" type="text" />
+              <div>              
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error message</small>
+              </div>
             </div>
-            <div class="inputGroup w50">
-              <input type="email" required />
-              <span>Email Address</span>
+            <div class="form-control w50">
+              <label>Email</label>
+              <input id="email" type="email" />
+              <div>              
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error message</small>
+              </div>
             </div>
-            <div class="inputGroup w50">
-              <input type="" required />
-              <span>Phone Number</span>
+            <div class="form-control w50">
+              <label>Phone Number</label>
+              <input id="phoneNumber" type="number" />
+              <div>              
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error message</small>
+              </div>
             </div>
-            <div class="inputGroup w100">
-              <textarea required></textarea>
-              <span>type your message...</span>
+            <div class="form-control w50">
+              <label>Message</label>
+              <textarea id="message" placeholder="type your message here..."></textarea>
+              <div>              
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error message</small>
+              </div>
             </div>
-            <div class="inputGroup w100">
-              <button type="submit" class="btn">Send</button>
+            <div class="form-control w100">
+              <button class="btn form-btn">
+                send
+              </button>
             </div>
           </form>
         </div>
