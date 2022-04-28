@@ -1,7 +1,6 @@
 // query selectors
 const menu = document.querySelector("#menu-icon");
 const primaryNav = document.querySelector("#primary-nav");
-const btn = document.querySelector("#formBtn");
 const form = document.querySelector("form");
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
