@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This is a food truck website that sells delicious mexican food"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="mexican food, tacos, food" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Food Truck</title>
+    <title>Food Truck Website</title>
   </head>
   <body>
     <!-- navbar section start -->
@@ -79,7 +84,7 @@
       <div class="container">
         <div class="row">
           <div class="col image-container">
-            <img src="./assets/images/about.svg" alt="image of chile peppers" />
+            <img src="./assets/images/about.svg" alt="image of a food truck" />
           </div>
           <div class="col about-content">
             <div class="title">
@@ -118,7 +123,7 @@
         <div class="grid-item">
           <div class="card">
             <div class="card-img">
-              <img src="./assets/images/photo1.jpg" alt="beef tacos" />
+              <img src="./assets/images/photo1.jpg" alt="image of beef tacos" />
             </div>
             <div class="card-content">
               <h2 class="card-header">Menu item 1</h2>
@@ -218,54 +223,55 @@
           <h2>Send us a Message</h2>
           <form>
             <div class="form-control w50">
-              <label>First Name</label>
+              <label for="firstName">First Name</label>
               <input id="firstName" type="text" />
-              <div>              
+              <div>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <small>Error message</small>
               </div>
             </div>
             <div class="form-control w50">
-              <label>Last Name</label>
+              <label for="lastName">Last Name</label>
               <input id="lastName" type="text" />
-              <div>              
+              <div>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <small>Error message</small>
               </div>
             </div>
             <div class="form-control w50">
-              <label>Email</label>
+              <label for="email">Email</label>
               <input id="email" type="email" />
-              <div>              
+              <div>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <small>Error message</small>
               </div>
             </div>
             <div class="form-control w50">
-              <label>Phone Number</label>
+              <label for="phoneNumber">Phone Number</label>
               <input id="phoneNumber" type="number" />
-              <div>              
+              <div>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <small>Error message</small>
               </div>
             </div>
             <div class="form-control w50">
-              <label>Message</label>
-              <textarea id="message" placeholder="type your message here..."></textarea>
-              <div>              
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="type your message here..."
+              ></textarea>
+              <div>
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <small>Error message</small>
               </div>
             </div>
             <div class="form-control w100">
-              <button class="btn form-btn">
-                send
-              </button>
+              <button class="btn form-btn">send</button>
             </div>
           </form>
         </div>
@@ -279,6 +285,6 @@
     </footer>
     <!-- footer section ends -->
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/dist/script.min.js" defer></script>
   </body>
 </html>
